@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<!--日历-->
+<div class="celendar">
+    <a href="javascript:;" class="date" >2017年8月01日</a>
+    <div class="celendar-cont clearfix">
+        <div class="celendar-left">
+            <div class="celendar-ltitle">
+                <div class="pre-box">
+                    <span class="pre"></span>
+                </div>
+                <div class="next-box">
+                    <span class="next"></span>
+                </div>
+                <div class="title-box" >
+                    <p class="title">2017年8月</p>
+                </div>
+            </div>
+            <div class="celendar-lcont">
+                <ul class="month celendar-lbox">
+                    <li>
+                        <ul class="month-title">
+                            <li>日</li>
+                            <li>一</li>
+                            <li>二</li>
+                            <li>三</li>
+                            <li>四</li>
+                            <li>五</li>
+                            <li>六</li>
+                        </ul>
+                        <ul class="month-cont clearfix">
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="month-title">
+                            <li>日</li>
+                            <li>一</li>
+                            <li>二</li>
+                            <li>三</li>
+                            <li>四</li>
+                            <li>五</li>
+                            <li>六</li>
+                        </ul>
+                        <ul class="month-cont clearfix"></ul>
+                    </li>
+                </ul>
+                <ul class="year celendar-lbox">
+                    <li>
+                        <ul class="year-cont clearfix">
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="year-cont clearfix">
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="year-ten celendar-lbox">
+                    <li>
+                        <ul class="year-ten-cont clearfix">
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="year-ten-cont clearfix">
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="year-hundred celendar-lbox">
+                    <li>
+                        <ul class="year-hundred-cont clearfix">
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="year-hundred-cont clearfix">
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="celendar-right">
+            <div class="clock-wrap">
+                <div class="clock">
+                    <span class="split-cirle"></span>
+                    <span class="split-hour"></span>
+                    <span class="split-minute"></span>
+                    <span class="split-second"></span>
+                    <ul class="clock-list">
+                    </ul>
+                </div>
+            </div>
+            <p class="time">18:54:45</p>
+            <p class="day">星期二</p>
+        </div>
+    </div>
+</div>
+
+<!--音乐播放器-->
+<div class="music-player">
+    <div class="music-bg"></div>
+    <div class="cont">
+        <div class="player-closebox">
+            <span class="icon logo"></span>
+            <div class="tb-box">
+                <span class="icon btn-shrink"></span>
+                <span class="icon btn-close"></span>
+            </div>
+        </div>
+        <div class="title">
+            <p class="song">xxxx</p>
+            <p class="artist">xxxx</p>
+        </div>
+        <div class="play-board">
+            <img src="img/play_needle.png"  class="needle">
+            <div class="disk-cover">
+                <img src="img/disk.jpg">
+            </div>
+            <audio src="#" id="player"></audio>
+            <div class="play-footer">
+                <div class="process">
+                    <span class="current-time">00:00</span>
+                    <div class="process-bar-box">
+                        <div class="process-bar">
+                            <div class="length"></div>
+                            <span class="cur icon"></span>
+                        </div>
+                    </div>
+                    <span class="total-time">00:00</span>
+                </div>
+                <div class="controls">
+                    <span class="icon btn-loop"></span>
+                    <span class="icon btn-pre"></span>
+                    <span class="icon btn-play"></span>
+                    <span class="icon btn-next"></span>
+                    <span class="icon btn-list"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--视频播放器-->
+<div class="video-player-wrap">
+    <div class="video-player">
+        <div class="player-closebox">
+            <span class="icon logo"></span>
+            <p class="video-name">xxxx</p>
+            <div class="tb-box">
+                <span class="icon btn-shrink"></span>
+                <span class="icon btn-magify"></span>
+                <span class="icon btn-close"></span>
+            </div>
+        </div>
+        <div class="cont-box">
+            <div class="cont">
+                <video src="#"></video>
+            </div>
+        </div>
+        <div class="controls-box">
+            <div class="process">
+                <div class="p-box pl-box">
+                    <span class="icon btn-minus"></span>
+                    <span class="current-time">00:00:00</span>
+                </div>
+                <div class="process-bar-box">
+                    <div class="process-bar">
+                        <div class="length"></div>
+                        <i class="cur icon"></i>
+                    </div>
+                </div>
+                <div class="p-box pr-box">
+                    <span class="total-time">00:00:00</span>
+                    <span class="icon btn-plus"></span>
+                    <span class="icon btn-stop"></span>
+                </div>
+            </div>
+            <div class="controls">
+                <span class="icon btn-volumn"></span>
+                <div class="volumn-bar-box  fl">
+                    <div class="volumn-bar">
+                        <div class="length"></div>
+                        <i class="cur icon"></i>
+                    </div>
+                </div>
+                <span class="icon btn-pre"></span>
+                <span class="icon btn-play"></span>
+                <span class="icon btn-next"></span>
+                <span class="icon btn-screen"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--窗口-->
+<!--<div class="window">
+    <div class= "window-cont">
+        <div class="close-box">
+            <div class="fr">
+                <input type="button" class="s-btn icon shrink">
+                <input type="button" class="s-btn icon magify">
+                <input type="button" class="s-btn icon close">
+            </div>
+        </div>
+        <div class="site-box">
+            <div class="btns fl">
+                <input type="button" class="icon left">
+                <input type="button" class="icon right">
+            </div>
+            <ul class="site-list fl"></ul>
+            <div class="search-box fr">
+                <input type="text" placeholder="搜索" class="inp-txt ">
+                <span class="icon icon-search"></span>
+            </div>
+        </div>
+        <ul class="column-menu"></ul>
+        <div class="column-tool-box">
+            <nav class="column-tool fl"></nav>
+            <nav class="column-tool fr"></nav>
+        </div>
+        <div class="cont-box">
+            <div class="left-box">
+                <ul class="left-menu"></ul>
+            </div>
+            <div class="right-box clearfix">
+                <ul class="cont"></ul>
+            </div>
+        </div>
+        <div class="state-box"></div>
+        <p class="select-box"></p>
+    </div>
+</div>-->
+
+<!--弹窗-->
+<!--<div class="pop" >
+    <div class="popWrap">
+        <div class="close-box">
+            <img src="img/icon/icon4.png" class="pic fl">
+            <span class="title fl">设置</span>
+            <div class="fr">
+                <input type="button" class="s-btn icon shrink">
+                <input type="button" class="s-btn icon close">
+            </div>
+        </div>
+        <div class="cont-box">
+            <ul class="submenu">
+                <li class="active">常规</li>
+                <li>属性</li>
+                <li>属性</li>
+            </ul>
+            <div class="cont">
+                &lt;!&ndash;<div class="area">
+                    <span class="title">是否允许开发评论</span>
+                    <div class="contBox">
+                        <label class="level"><input type="radio" name="level" checked>是</label>
+                        <label class="level"><input type="radio" name="level" checked>否</label>
+                    </div>
+                </div>
+                <div class="area">
+                    <span class="title">博客状态</span>
+                    <div class="contBox">
+                        <label class="level"><input type="radio" name="level" checked>开启</label>
+                        <label class="level"><input type="radio" name="level" checked>关闭</label>
+                    </div>
+                </div>&ndash;&gt;
+                &lt;!&ndash;<div class="area">
+                    <span class="title">博客名称</span>
+                    <div class="contBox">
+                        <input type="text" value="xxxxxx" class="inp-txt">
+                    </div>
+                </div>&ndash;&gt;
+                <ul class="info-list">
+                    <li class="has-ico">
+                        <h4><img src="img/icon/icon4.png"></h4>
+                        <p><input type="text" class="inp-txt" value="bbbb"></p>
+                    </li>
+                    <li class="has-line">
+                        <h4>类型：</h4>
+                        <p>文件夹</p>
+                    </li>
+                    <li>
+                        <h4>位置：</h4>
+                        <p>C:\a</p>
+                    </li>
+                    <li>
+                        <h4>大小：</h4>
+                        <p>1.42MB</p>
+                    </li>
+                    <li>
+                        <h4>包含：</h4>
+                        <p>6个文件，0个文件夹</p>
+                    </li>
+                    <li class="has-line">
+                        <h4>属性：</h4>
+                        <p>
+                            <label><input type="checkbox" checked>只读(只应用于文件夹中的文件)(R)</label>
+                            <label><input type="checkbox" >影藏</label>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-btn-box">
+                <input type="button" value="确定" class="p-btn icon ok">
+                <input type="button" value="取消" class="p-btn icon undo">
+                <input type="button" value="应用" class="p-btn icon apply">
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!--计算器-->
+<!--<div class="pop">
+    <div class="popWrap">
+        <div class="close-box">
+            <img src="img/icon/calc.png" class="pic fl">
+            <span class="title fl">计算器</span>
+            <div class="fr">
+                <input type="button" class="s-btn icon shrink">
+                <input type="button" class="s-btn icon magify-gray">
+                <input type="button" class="s-btn icon close">
+            </div>
+        </div>
+        <div class="calculator">
+            <div class="screen">
+                <p class="expression"></p>
+                <p class="num"></p>
+            </div>
+            <ul class="list clearfix">
+                <li>←</li>
+                <li>CE</li>
+                <li>C</li>
+                <li>+-</li>
+                <li>√</li>
+
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>/</li>
+                <li>%</li>
+
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>*</li>
+                <li>1/x</li>
+
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>-</li>
+
+                <li class="col2">0</li>
+                <li>.</li>
+                <li>+</li>
+                <li class="row2">=</li>
+            </ul>
+        </div>
+    </div>
+</div>-->
+
+<!--自定义菜单-->
+<!--<ul class="menu">
+    <li>
+        <a href="#">
+            <span class="icon-box"><i class="icon"></i></span>
+            <p>查看(V)<span class="right"></span></p>
+        </a>
+        <ul class="menu">
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon"></i></span>
+                    <p>大图标</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon"></i></span>
+                    <p>中等图标</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon"></i></span>
+                    <p>小图标</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon"></i></span>
+                    <p>自动排列图标</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon"></i></span>
+                    <p>将图标与网格对齐</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon"></i></span>
+                    <p>显示桌面图标</p>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li >
+        <a href="#">
+            <span class="icon-box"><i class="icon"></i></span>
+            <p>排序方式(O)<span class="right"></span></p>
+        </a>
+        <ul class="menu">
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon"></i></span>
+                    <p>名称</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon"></i></span>
+                    <p>大小</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon"></i></span>
+                    <p>项目类型</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon"></i></span>
+                    <p>修改日期</p>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li >
+        <a href="#">
+            <span class="icon-box"><i class="icon"></i></span>
+            <p>刷新(E)</p>
+        </a>
+    </li>
+    <li class="split">
+        <a href="#">
+            <span class="icon-box"><i class="icon"></i></span>
+            <p class = "title">
+                <span class="gray"></span>
+                <span class="white"></span>
+            </p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="icon-box"><i class="icon"></i></span>
+            <p>粘贴(P)</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="icon-box"><i class="icon"></i></span>
+            <p>粘贴快捷方式(S)</p>
+        </a>
+    </li>
+    <li >
+        <a href="#">
+            <span class="icon-box"><i class="icon"></i></span>
+            <p>撤销 移动(U)</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="icon-box"><i class="icon"></i></span>
+            <p>新建(W)<span class="right"></span></p>
+        </a>
+        <ul class="menu">
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon icon-i1"></i></span>
+                    <p>文件夹</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon icon-i2"></i></span>
+                    <p>快捷方式</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon icon-i4"></i></span>
+                    <p>Microsoft Word 文档</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon icon-i5"></i></span>
+                    <p>Microsoft PowerPoint 幻灯片</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon icon-i6"></i></span>
+                    <p>文本文档</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon icon-i7"></i></span>
+                    <p>Microsoft Excel 工作表</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-box"><i class="icon icon-i8"></i></span>
+                    <p>zip文件</p>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="split">
+        <a href="#">
+            <span class="icon-box"><i class="icon"></i></span>
+            <p>
+                <span class="gray"></span>
+                <span class="white"></span>
+            </p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="icon-box"><i class="icon icon-tool"></i></span>
+            <p>小工具(G)</p>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="icon-box"><i class="icon icon-per"></i></span>
+            <p>个性化(R)</p>
+        </a>
+    </li>
+</ul>-->
+
+<!--桌面-->
+<main class="main">
+    <span class="switchbg icon"></span>
+    <ul class="desk">
+        <!-- <li class="desk-icon-box" id="system">
+             <img src="img/icon/icon165.png" class="desk-icon">
+             <p>博客管理</p>
+         </li>
+         <li class="desk-icon-box" id="set">
+             <img src="img/icon/icon47.png" class="desk-icon">
+             <p>设置</p>
+         </li>
+         <li class="desk-icon-box">
+             <img src="img/icon/icon32.png" class="desk-icon">
+             <p>回收站</p>
+         </li>-->
+    </ul>
+</main>
+
+<!--底部任务栏-->
+<footer class="task-column">
+    <div class="t-start-box fl" >
+        <div class="start-menu-box">
+            <div class="start-menu fl">
+                <ul class="list">
+                    <li id="calc"><img src="img/icon/calc.png"><span>计算器</span></li>
+                    <li><img src="img/icon/text.png"><span>记事本</span></li>
+                    <li><img src="img/icon/icon4.png"><span>文件夹</span></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" placeholder="搜索程序和文件" class="inp-txt">
+                </div>
+            </div>
+            <div class="fastlink-box fl">
+                <div class="pic-box">
+                    <img src="img/icon/icon265.png" alt="">
+                </div>
+                <ul class="fastlink">
+                    <li class="active">Adminstrator</li>
+                    <li>文档</li>
+                    <li class="split"><div></div></li>
+                    <li>设置</li>
+                </ul>
+            </div>
+        </div>
+        <div class="t-start icon" id="start"></div>
+    </div>
+    <div class="t-task fl">
+        <span class="t-split icon fl"></span>
+        <!--<div class="tk-item fl" id="video">
+            <img src="img/icon/bangfeng.png" alt="">
+        </div>
+        <div class="tk-item fl" id="audio">
+            <img src="img/icon/wangyi.png" alt="">
+        </div>-->
+        <!--<div class="tk-item fl open">
+            <img src="img/icon/icon4.png" alt="">
+            <span>index.html</span>
+        </div>
+        <div class="tk-item fl open">
+            <img src="img/icon/icon300.png" alt="">
+            <span>E:\a.txt</span>
+        </div>-->
+    </div>
+    <div class="t-state fr">
+        <span class="t-split icon fl"></span>
+        <span class="s-time fl" id="time">11: 46</span>
+        <span class="s-show icon fl" title="显示桌面"></span>
+    </div>
+</footer>
+<input type="text" class="hidden" style="width: 0; height: 0">
+
+<script src="js/tween.js"></script>
+<script src="js/celendar.js"></script>
+<script src="js/model.js"></script>
+<script src="js/function.js"></script>
+<script src="js/data.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
